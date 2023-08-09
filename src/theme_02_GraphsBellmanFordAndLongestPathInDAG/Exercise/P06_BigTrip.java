@@ -42,8 +42,6 @@ public class P06_BigTrip {
         int[] prev = new int[graph.length];
         Arrays.fill(prev, -1);
 
-        int totalWeight = 0;
-
         while (!sortedVertices.isEmpty()) {
             Integer node = sortedVertices.pop();
             for (int i = 1; i < graph[node].length; i++) {
