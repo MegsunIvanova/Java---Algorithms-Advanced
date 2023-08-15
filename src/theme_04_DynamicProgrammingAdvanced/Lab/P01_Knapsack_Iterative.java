@@ -77,7 +77,7 @@ public class P01_Knapsack_Iterative {
 
         while (lastItem > 0) {
             if (takenItems[lastItem][capacity]) {
-                Item item = items.get(lastItem -1);
+                Item item = items.get(lastItem - 1);
                 result.add(item);
                 capacity -= item.weight;
             }
@@ -91,8 +91,5 @@ public class P01_Knapsack_Iterative {
         for (Item item : result) {
             System.out.println(item.name);
         }
-
     }
-
-
 }
